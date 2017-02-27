@@ -1,13 +1,11 @@
-command: "date +\"%H:%M\""
+command: "date +\"%I:%M %p\""
 
 refreshFrequency: 10000 # ms
 
 render: (output) ->
   """
-  <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css" />
-  <div class="time"
+  <div class="time">
     <span></span>
-    <span class="icon"></span>
   </div>
   """
 
@@ -19,8 +17,9 @@ update: (output, el) ->
 
 style: """
   -webkit-font-smoothing: antialiased
-  color: #d5c4a1
-  font: 10px Input
+  color: #f8f8f8
+  font: 14px Helvetica Neue
+  font-weight: 500
   right: 10px
-  top: 6px
+  top: 4px
 """
